@@ -13,4 +13,7 @@ public class MainActivity extends AppCompatActivity {
         Toast msg = Toast.makeText(this, "Welcome to our app", Toast.LENGTH_LONG);
         msg.show();
     }
+    @Override
+    {
+    }
 }
