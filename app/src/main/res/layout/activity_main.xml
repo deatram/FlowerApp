@@ -38,7 +38,8 @@
         android:text="Click me"
         android:layout_width="213dp"
         android:layout_height="wrap_content"
-        android:id="@+id/button" />
+        android:id="@+id/button"
+        android:onClick="openActivityTwo"/>
 
 
 </LinearLayout>

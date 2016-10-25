@@ -1,9 +1,11 @@
 package com.example.dlipingu.flowerapp;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -26,5 +28,10 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         Toast.makeText(this, "You selected " + item.getTitle(), Toast.LENGTH_LONG).show();
         return super.onOptionsItemSelected(item);
+    }
+    public void openActivityTwo(View v)
+    {
+        Intent intent = new Intent(this, DetailActivity.class);
+        startActivity(intent);
     }
 }
