@@ -2,6 +2,7 @@ package com.example.dlipingu.flowerapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -11,5 +12,11 @@ public class DetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_detail);
         //getActionBar().setDisplayHomeAsUpEnabled(true);
 
+    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
     }
 }
