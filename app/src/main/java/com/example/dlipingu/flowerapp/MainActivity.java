@@ -33,7 +33,36 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+
+        Button button2 = (Button) findViewById(R.id.button2);
+        button2.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                String webpage = "http://developer.android.com/index.html";
+                Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(webpage));
+                startActivity(intent);
+            }
+
+        });
+
+        Button button3 = (Button) findViewById(R.id.button3);
+        button3.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View v)
+            {
+                Intent intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, "Hello everyone");
+                intent.setType("text/plain");
+                startActivity(intent);
+            }
+
+        });
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu)
     {
@@ -46,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, "You selected " + item.getTitle(), Toast.LENGTH_LONG).show();
         return super.onOptionsItemSelected(item);
     }
+    /*
     public void openActivityTwo(View v)
     {
         Intent intent = new Intent(this, DetailActivity.class);
@@ -64,7 +94,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(Intent.EXTRA_TEXT, "Hello everyone");
         intent.setType("text/plain");
         startActivity(intent);
-    }
+    }*/
 
 
     @Override
