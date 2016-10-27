@@ -44,28 +44,5 @@
                 style="@style/bluestyle"
                 android:layout_gravity="center_horizontal" />
 
-            <Button
-            android:text="@string/ClickMe"
-            android:layout_width="213dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:text="@string/ImplicitViewURL"
-            android:layout_width="207dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button2"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal" />
-
-        <Button
-            android:text="@string/ImplicitViewURL"
-            android:layout_width="212dp"
-            android:layout_height="wrap_content"
-            android:id="@+id/button3"
-            android:gravity="center_horizontal"
-            android:layout_gravity="center_horizontal" />
         </LinearLayout>
     </ScrollView>

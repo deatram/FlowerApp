@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         Toast msg = Toast.makeText(this, "Welcome to our app", Toast.LENGTH_LONG);
         msg.show();
         Log.d(LOGTAG, "OnCreate");
-        Button button1 = (Button) findViewById(R.id.button);
+        /*Button button1 = (Button) findViewById(R.id.button);
         button1.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
 
-        });
+        });*/
     }
 
     @Override
@@ -72,7 +72,30 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        Toast.makeText(this, "You selected " + item.getTitle(), Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, "You selected " + item.getTitle(), Toast.LENGTH_LONG).show();
+        Intent intent = null;
+        switch (item.getItemId())
+        {
+            case R.id.activity_one:
+                intent = new Intent(this, DetailActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.implicit_view_url:
+                String webpage = "http://developer.android.com/index.html";
+                intent = new Intent(Intent.ACTION_VIEW, Uri.parse(webpage));
+                startActivity(intent);
+                break;
+            case R.id.send_message:
+                intent = new Intent();
+                intent.setAction(Intent.ACTION_SEND);
+                intent.putExtra(Intent.EXTRA_TEXT, "Hello everyone");
+                intent.setType("text/plain");
+                startActivity(intent);
+                break;
+            default:
+                break;
+
+        }
         return super.onOptionsItemSelected(item);
     }
     /*

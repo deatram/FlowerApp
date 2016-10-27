@@ -3,7 +3,9 @@
     <string name="flower">Tibouchina semidecandra</string>
     <string name="instructions">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lobortis dolor non vestibulum rhoncus. Aliquam bibendum metus quis auctor gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vestibulum faucibus nunc orci, nec mollis tortor consequat nec.</string>
     <string name="action_settings">Settings</string>
-    <string name="ImplicitViewURL">Implicit View URL</string>
-    <string name="ImplicitSendText">Implicit Send Text</string>
-    <string name="ClickMe">Click me</string>
+    <string name="activity_one">Activity One</string>
+    <string name="implicit_view_url">Implicit View URL</string>
+    <string name="send_message">Send Message</string>
+
+
 </resources>
